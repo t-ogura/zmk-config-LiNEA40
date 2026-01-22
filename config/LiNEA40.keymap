@@ -167,7 +167,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &none  &lt 1 SPACE  &lt 3 GRAVE    &kp BACKSPACE  &lt 2 ENTER         &kp F7     &kp F10  &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         Function {
@@ -189,7 +189,7 @@
 &kp ESCAPE            &kp N0        &kp PERIOD    &trans        &kp LANG2    &kp DEL    &trans  &kp LANG1                    &kp RS(RC(TAB))  &kp RC(TAB)  &kp F12
             >;
 
-            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Scroll {
@@ -211,7 +211,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &none  &lt 5 SPACE  &lt 7 LC(SPACE)    &kp BACKSPACE  &lt 6 ENTER         &kp F7     &kp F10  &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl  SCRL_DOWN SCRL_UP>;
         };
 
         iOS_Function {
@@ -233,7 +233,7 @@
 &kp ESCAPE            &kp N0        &kp PERIOD    &trans        &kp LANG2  &kp DEL    &trans  &kp LANG1                    &kp RS(RC(TAB))  &kp RC(TAB)  &kp F12
             >;
 
-            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         iOS_Scroll {
