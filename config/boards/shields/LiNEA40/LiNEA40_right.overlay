@@ -49,6 +49,11 @@
     };
 };
 
+/* Disable I2C0 to prevent conflict with SPI0 (same hardware peripheral 0x40003000).
+ * Prospector's seeeduino_xiao_ble.overlay enables i2c0 on D4/D5,
+ * but LiNEA40 uses spi0 for the trackball on the same pins. */
+&i2c0 { status = "disabled"; };
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
